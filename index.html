@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD Container Tracking - Shipping & Logistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>KD Container Tracking</h1>
+            <p>Real-time shipping and logistics tracking</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Track Your Container</h2>
+            <div class="search-form">
+                <input type="text" id="containerInput" placeholder="Enter container ID (e.g., MSKU-123456)" maxlength="20">
+                <button onclick="trackContainer()">Track Container</button>
+            </div>
+        </section>
+
+        <section id="trackingResults" class="tracking-results" style="display: none;">
+            <h2>Container Details</h2>
+            <div id="containerInfo" class="container-info"></div>
+            
+            <h3>Tracking Timeline</h3>
+            <div id="trackingTimeline" class="timeline"></div>
+            
+            <h3>Current Status</h3>
+            <div id="currentStatus" class="status-card"></div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Demo Containers</h2>
+            <p>Try tracking these demo container IDs:</p>
+            <div class="demo-buttons">
+                <button onclick="trackDemoContainer('MSKU-123456')" class="demo-btn">MSKU-123456</button>
+                <button onclick="trackDemoContainer('TCLU-789012')" class="demo-btn">TCLU-789012</button>
+                <button onclick="trackDemoContainer('HJMU-345678')" class="demo-btn">HJMU-345678</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KD Shipping & Logistics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
