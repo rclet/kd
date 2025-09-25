@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD Shipping Agencies - Global NVOCC Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-ship"></i> KD Shipping</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tracking" class="nav-link">Track Shipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1>Global Shipping Solutions</h1>
+                <p>KD Shipping Agencies - Your trusted NVOCC partner for worldwide cargo transportation</p>
+                <div class="hero-buttons">
+                    <a href="#tracking" class="btn btn-primary">Track Shipment</a>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking-section">
+        <div class="container">
+            <h2>Track Your Shipment</h2>
+            <p>Enter your tracking number to get real-time updates on your cargo</p>
+            
+            <div class="tracking-form">
+                <div class="input-group">
+                    <input type="text" id="trackingNumber" placeholder="Enter tracking number (e.g., KD123456789)" maxlength="20">
+                    <button onclick="trackShipment()" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Track
+                    </button>
+                </div>
+            </div>
+
+            <div id="trackingResults" class="tracking-results" style="display: none;">
+                <!-- Tracking results will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our NVOCC Services</h2>
+            <p>Comprehensive shipping and logistics solutions worldwide</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Ocean Freight</h3>
+                    <p>Full Container Load (FCL) and Less Container Load (LCL) services to major ports worldwide</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Air Freight</h3>
+                    <p>Fast and reliable air cargo services for time-sensitive shipments</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Warehousing</h3>
+                    <p>Secure storage and distribution facilities at key locations</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Customs Clearance</h3>
+                    <p>Expert customs brokerage and documentation services</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Door-to-Door</h3>
+                    <p>Complete logistics solutions from origin to destination</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cargo Insurance</h3>
+                    <p>Comprehensive insurance coverage for your valuable cargo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About KD Shipping Agencies</h2>
+                    <p>KD Shipping Agencies is a leading NVOCC (Non-Vessel Operating Common Carrier) providing comprehensive shipping and logistics solutions worldwide. With years of experience in international trade, we offer reliable, cost-effective services to meet all your cargo transportation needs.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Global Partners</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50,000+</h3>
+                            <p>Shipments Handled</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Countries Served</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-features">
+                    <h3>Why Choose KD Shipping?</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Global network of trusted partners</li>
+                        <li><i class="fas fa-check"></i> Real-time tracking and monitoring</li>
+                        <li><i class="fas fa-check"></i> Competitive rates and flexible terms</li>
+                        <li><i class="fas fa-check"></i> 24/7 customer support</li>
+                        <li><i class="fas fa-check"></i> Expert customs and documentation services</li>
+                        <li><i class="fas fa-check"></i> Advanced technology solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Ready to ship with us? Contact our team for personalized shipping solutions</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>123 Port Street, Maritime District<br>Shipping City, SC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@kdshipping.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="ocean-freight">Ocean Freight</option>
+                            <option value="air-freight">Air Freight</option>
+                            <option value="customs-clearance">Customs Clearance</option>
+                            <option value="warehousing">Warehousing</option>
+                            <option value="door-to-door">Door-to-Door</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-ship"></i> KD Shipping</h3>
+                    <p>Your trusted NVOCC partner for global shipping solutions. Connecting businesses worldwide with reliable, efficient logistics services.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#tracking">Track Shipment</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Ocean Freight</a></li>
+                        <li><a href="#services">Air Freight</a></li>
+                        <li><a href="#services">Customs Clearance</a></li>
+                        <li><a href="#services">Warehousing</a></li>
+                        <li><a href="#services">Door-to-Door</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 KD Shipping Agencies. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
